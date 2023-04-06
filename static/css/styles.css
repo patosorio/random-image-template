@@ -1,0 +1,22 @@
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+.grid-item {
+    position: relative;
+}
+.grid-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.grid-item.wide {
+    grid-column-end: span 2;
+  }
+  
+  .grid-item.tall {
+    grid-row-end: span 2;
+  }
